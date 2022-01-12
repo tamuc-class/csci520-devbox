@@ -42,10 +42,13 @@ echo -e "vagrant\nvagrant" | passwd vagrant
 #curl -fsSL https://code-server.dev/install.sh | sh
 echo "Download and install VSCode code-server"
 cd /root
-curl -fsSOL https://github.com/cdr/code-server/releases/download/v3.9.3/code-server_3.9.3_amd64.deb
-sudo dpkg -i code-server_3.9.3_amd64.deb
+curl -fsSOL https://github.com/coder/code-server/releases/download/v4.0.1/code-server_4.0.1_amd64.deb
+#curl -fsSOL https://github.com/cdr/code-server/releases/download/v3.9.3/code-server_3.9.3_amd64.deb
+#sudo dpkg -i code-server_3.9.3_amd64.deb
+sudo dpkg -i code-server_4.0.1_amd64.deb
 systemctl enable --now code-server@vagrant
-rm code-server_3.9.3_amd64.deb
+#rm code-server_3.9.3_amd64.deb
+rm code-server_4.0.1_amd64.deb
 
 # create private key for github/git repository access
 echo "Setup ssh keys for developers"
@@ -89,7 +92,8 @@ chown -R vagrant:vagrant /home/vagrant/.local
 echo "Fetch VS-code server cpptools for later installation"
 cd /home/vagrant
 #curl -fsSOL https://github.com/microsoft/vscode-cpptools/releases/download/1.3.1/cpptools-linux.vsix
-curl -fsSOL https://github.com/microsoft/vscode-cpptools/releases/download/1.4.0/cpptools-linux.vsix
+#curl -fsSOL https://github.com/microsoft/vscode-cpptools/releases/download/1.4.0/cpptools-linux.vsix
+curl -fsSOL https://github.com/microsoft/vscode-cpptools/releases/download/1.7.1/cpptools-linux.vsix
 chown vagrant:vagrant /home/vagrant/cpptools-linux.vsix
 
 # restart the code server to ensure above changes are picked up
