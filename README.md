@@ -1,7 +1,7 @@
 ---
 title: 'Data Structures and Algorithm Analysis Class DevBox'
 author: 'CSci 520: Data Structures and Algorithm Analysis'
-date: Spring 2022'
+date: 'Spring 2022'
 ---
 
 Class assignments and configuration for CSci 520 Data Structures and
