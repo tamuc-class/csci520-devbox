@@ -14,7 +14,7 @@ Algorith Analysis.  You should start by following the
 Getting Started instructions next, to get your required
 class DevBox set up for the assignments and class activities for this
 course.  Our class DevBox is a virtual box instance running an Ubuntu
-Linux distribution (20.04) with version of VSCode cod-server installed
+Linux distribution (21.04) with version of VSCode cod-server installed
 and running as a standard web server.  Your class DevBox
 virtual instance has all of the tools, compilers, libraries and editors
 that you need to work on the assignments and tests you are required
