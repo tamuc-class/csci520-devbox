@@ -296,18 +296,18 @@ fixes while the class is being conducted.
 
 To clone the class repository from the command line, change to the directory you
 want to clone a copy of the class files into, then run the git command. I
-usually recommend to have a directory named `repos` in your home directory where you
+usually recommend to have a directory named `boxes` in your home directory where you
 keep all of your repositories.  On Windows, MacOS and Linux you can use `mkdir`,
 `cd`, and the `git` command to accomplish this from a command line terminal
 or shell:
 
 ```
-# create a directory called repos, this assumes you are currently in your home directory
-$ mkdir repos
+# create a directory called boxes, this assumes you are currently in your home directory
+$ mkdir boxes
 ```
 ```
-# change into the repos directory to be your current working sub-directory
-$ cd repos
+# change into the boxes directory to be your current working sub-directory
+$ cd boxes
 ```
 ```
 # clone the class repository into your current directory
@@ -315,12 +315,12 @@ $ git clone https://github.com/tamuc-class/csci520-devbox.git
 ```
 
 The clone is basically like a download of the files.  If you are in the
-`repos` directory, there will now be a new sub-directory named `csci520-devbox`
+`boxes` directory, there will now be a new sub-directory named `csci520-devbox`
 that contains all of the files for the class that were just downloaded.
 
 ## 5. Start and Provision your Class Development Box
 
-Assuming you just completed the previous step 4, you are now in the `repos`
+Assuming you just completed the previous step 4, you are now in the `boxes`
 directory, and you just cloned a copy of the `csci520-devbox` directory.
 Change into the class repository directory from the command line:
 
